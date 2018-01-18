@@ -1,8 +1,8 @@
-# Technical Test
+# Technical Test
 
 Written in Ruby. 
 
-### Setup
+### Setup
 
 run `bundle install` to install all the gems required. 
 
