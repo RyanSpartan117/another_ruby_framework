@@ -1,18 +1,13 @@
 module EnvironmentSetup
+  Capybara.default_driver = :selenium_chrome
 
-  def driver_setup browser
-    Capybara.register_driver browser do |app|
-      Capybara::Selenium::Driver.new(app,:browser => browser)
-    end
-  end
-
-  def capybara_default_setup 
-    Capybara.configure do |config|
-      config.run_server = false #To ensure a Rack server does not start
-      config.ignore_hidden_elements = false #to ensure that all hidden elements on a page are recorded/available
-      config.default_max_wait_time= 10 #wait time for asynchronus processes to finsh
-      config.default_driver = :chrome #Default browser - input :selenium_chrome to use chrome browser as stated in the driver registration below
-      config.match = :prefer_exact #this setting is to ensure Capybara has specific matching rather than fuzzy logic
-    end
-  end
+  Capybara.register_driver :selenium_chrome do |app|
+    require 'selenium/webdriver'
+    profile = Selenium::WebDriver::Chrome::Profile.new
+    profile['browser.helperApps.alwaysAsk.force'] = false
+    profile['browser.cache.disk.enable'] = false
+    profile['browser.cache.memory.enable'] = false
+    client = Selenium::WebDriver::Remote::Http::Default.new
+    client.timeout = 60 # instead of the default 60
+  Capybara::Selenium::Driver.new(app, :browser => :chrome, args: ["--window-size=2560,1600"])
 end
