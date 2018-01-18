@@ -10,4 +10,5 @@ module EnvironmentSetup
     client = Selenium::WebDriver::Remote::Http::Default.new
     client.timeout = 60 # instead of the default 60
   Capybara::Selenium::Driver.new(app, :browser => :chrome, args: ["--window-size=2560,1600"])
+  end
 end

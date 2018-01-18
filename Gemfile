@@ -2,6 +2,7 @@
 source "https://rubygems.org"
 
 # gem "rails"
+gem 'activesupport'
 gem 'capybara'
 gem 'cucumber'
 gem 'site_prism'

@@ -1,4 +1,4 @@
-Given(/^I can access the BBC home page$/) do
+Given(/^A user can access the homepage$/) do
   @Bbcwebsite = Bbcwebsite.new
   @Bbcwebsite.bbc_home_page.load
   @Bbcwebsite.bbc_home_page.displayed?
