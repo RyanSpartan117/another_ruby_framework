@@ -1,4 +1,4 @@
-class Testwebsite
+class Todowebsite
 #POM Superclass. All stepdefs will use this as a base.
 #The below method allows access to all the pages without having to manually specify them as their own class instances.
 #Any method that isn't explicity specified in the test class will go through method missing, which then creates and returns

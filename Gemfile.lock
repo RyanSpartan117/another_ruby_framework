@@ -24,6 +24,7 @@ GEM
     chromedriver-helper (1.1.0)
       archive-zip (~> 0.7.0)
       nokogiri (~> 1.6)
+    coderay (1.1.2)
     concurrent-ruby (1.0.5)
     cucumber (3.1.0)
       builder (>= 2.1.2)
@@ -47,6 +48,7 @@ GEM
     i18n (0.9.1)
       concurrent-ruby (~> 1.0)
     io-like (0.3.0)
+    method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.1)
@@ -54,6 +56,9 @@ GEM
     multi_test (0.1.2)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     public_suffix (3.0.1)
     rack (2.0.3)
     rack-test (0.8.2)
@@ -94,6 +99,7 @@ DEPENDENCIES
   capybara
   chromedriver-helper
   cucumber
+  pry
   rake
   require_all
   rspec
