@@ -29,7 +29,7 @@ Browser choice is fairly simple. Chrome heavily dominates the usage share for we
 
 It's also my browser of choice so i'm heavily biased. Dev tools are great all purpose, and comes with the device toolbar which is very handy.
 
-### Tests  
+### Tests  
 
 I have split the tests up depending on which part of the todos list functionality i'll be testing.
 
