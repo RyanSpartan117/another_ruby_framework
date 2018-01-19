@@ -40,6 +40,6 @@ Adding and removing todos is the main functionality of this page, and where I de
 
 I have chosen to classify sad/bad test paths as out of scope considering time constraints for this technical test. So everything here is purely happy. 
 
-I've included a nonsense test that fails in line with the expected deliverables.  
+I've included a nonsense test that fails in line with the expected technical deliverables.  
 
-Due to time constraints, I was not able to implement the clearing of the tests. This is the next part of the functionality I would have automated.
+Due to time constraints, I was not able to implement the clearing of the todos. This is the next part of the functionality I would have automated.
