@@ -21,6 +21,8 @@ For an HTML report:
 `rake run_tests_with_report`
 
 The report will be in the reports directory. Open in browser to get the pretty HTML report.
+There is currently a report with the full test run saved in there, so feel free to check that out.  
+Running the above task will overwrite the report.
 
 
 ## Decision justifications
