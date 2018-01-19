@@ -8,11 +8,11 @@ Written in Ruby.
 [Chrome needs to be installed.](https://www.google.co.uk/chrome/browser/desktop/index.html?brand=CHBD&gclid=EAIaIQobChMIo_2rn9Xi2AIV6grTCh3ggA3OEAAYASAAEgLp5_D_BwE)  
 
 First, clone this repo.  
-Then from the repo root, run `bundle install` to install all the gems required. 
+Then from the root directory, run `bundle install` to install all the gems required. 
 
 ### Running tests
 
-To run the tests without reports, use the Rake taskrunner:
+To run the tests without reports, use the Rakefile taskrunner(also from root directory):
 
 `rake run_tests`
 
@@ -20,7 +20,7 @@ For an HTML report:
 
 `rake run_tests_with_report`
 
-The report will be in the reports directory.
+The report will be in the reports directory. Open in browser to get the pretty HTML report.
 
 
 ## Decision justifications
