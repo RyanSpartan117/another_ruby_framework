@@ -1,6 +1,7 @@
 class Todohomepage < SitePrism::Page 
   set_url "http://todomvc.com/examples/angularjs/#/" 
-  set_url_matcher /todomvc/ #Regex url matcher to check the page is displayed
+  set_url_matcher /todomvc/ 
+  #Regex url matcher to check the page is displayed
 
   def assertHomepage #Assertions for the corresponding page within the corresponding page object class
     expect(page.title).to include("TodoMVC")
