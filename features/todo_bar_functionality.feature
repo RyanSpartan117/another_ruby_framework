@@ -2,7 +2,7 @@
 Feature: The todo list 
 
   @AddTodos
-  Scenario Outline: A user can add several things to their todo to the list
+  Scenario Outline: A user can add several things to their todo to list
     Given The user is on the todo homepage
     When The user enters "<their_todo_item>" in the todo bar
     Then The "<todo_count>" will be correct
