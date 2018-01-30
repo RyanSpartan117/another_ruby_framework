@@ -4,7 +4,6 @@ require 'active_support'
 require 'site_prism'
 require 'require_all'
 require 'rspec'
-require 'pry'
 
 #Linking of pages
 require_rel "../../lib/pages/*.rb"
