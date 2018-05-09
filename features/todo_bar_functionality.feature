@@ -19,7 +19,7 @@ Feature: The todo list
     Given The user is on the todo homepage
     Then the user can find Gandalf 
 
-  @removeTodos
+  @RemoveTodos
   Scenario: I can remove a todo from the list
     Given The user is on the todo homepage
     When The user completes the Buy eggs and cheese to do
