@@ -1,4 +1,4 @@
-# Technical Test
+# Another test automation framework
 
 Written in Ruby. 
 
@@ -24,13 +24,6 @@ The report will be in the reports directory. Open in browser to get the pretty H
 There is currently a report with the full test run saved in there, so feel free to check that out.  
 Running the above task will overwrite the report.
 
-
-## Decision justifications
-
-Browser choice is fairly simple. Chrome heavily dominates the usage share for web browsers.  
-
-It's also my browser of choice so i'm heavily biased. Dev tools are great all purpose, and comes with the device toolbar which is very handy.
-
 ### Tests  
 
 I have split the tests up depending on which part of the todos list functionality i'll be testing.
@@ -38,10 +31,4 @@ I have split the tests up depending on which part of the todos list functionalit
 I have the setup test - tagged with @AddTodo
 And the teardown test - tagged with @RemoveTodos
 
-Adding and removing todos is the main functionality of this page, and where I decided to focus the tests.  
-
-I have chosen to classify sad/bad test paths as out of scope considering time constraints for this technical test. So everything here is purely happy. 
-
-I've included a nonsense test that fails in line with the expected technical deliverables.  
-
-Due to time constraints, I was not able to implement the clearing of the todos. This is the next part of the functionality I would have automated.
+I've included a nonsense test that fails. 
