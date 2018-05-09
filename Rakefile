@@ -1,5 +1,4 @@
 # taskrunner to simplify the running and reporting of tests
-
 task :run_tests do
     system 'cucumber -f pretty'
 end

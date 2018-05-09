@@ -1,13 +1,14 @@
 # frozen_string_literal: true
-source "https://rubygems.org"
+
+source 'https://rubygems.org'
 
 # gem "rails"
 gem 'activesupport'
 gem 'capybara'
-gem 'cucumber'
-gem 'site_prism'
-gem 'require_all'
-gem 'selenium-webdriver'
 gem 'chromedriver-helper'
-gem 'rspec'
+gem 'cucumber'
+gem 'require_all'
 gem 'rake'
+gem 'rspec'
+gem 'selenium-webdriver'
+gem 'site_prism'
