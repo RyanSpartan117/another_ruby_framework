@@ -6,12 +6,12 @@ require 'require_all'
 require 'rspec'
 require 'selenium/webdriver'
 
-#Linking of pages
+# Linking of pages
 require_rel '../../lib/pages/*.rb'
 require_rel '../../lib/helpers/*.rb'
 require_rel '../../lib/*.rb'
 
-#Helper methods
+# Helper methods
 include RSpec::Matchers
 include FinderHelpers
 
@@ -26,6 +26,5 @@ Capybara.register_driver :selenium_chrome do |app|
 	profile['browser.cache.memory.enable'] = false
 	client = Selenium::WebDriver::Remote::Http::Default.new
 	client.timeout = 60 # instead of the default 60
-	Capybara::Selenium::Driver.new(app, :browser => :chrome, args: ['--window-size=2560,1600'])
+	Capybara::Selenium::Driver.new(app, browser: :chrome, args: ['--window-size=2560,1600'])
 end
-
